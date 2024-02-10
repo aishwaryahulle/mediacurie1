@@ -1,186 +1,171 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-a{
-    text-decoration: none;
-    margin: 1rem;
-    padding:1rem;
-}
-header {
-    color: aqua;
-    background-color: blue;
-    width:100%;
-    height:5rem;
+
+nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
- #Home .circle{ 
-    height:100 vh;
-    width:100vw;
-    display: flex; 
-    align-items: center;
-    justify-content: center; 
-    flex-direction: column;
- } 
- #Home{
-    background-color: aqua;
-    height: 100vh;
- }
-#Home .circle img{
-    height:250px;
-    width:250px;
-    border-radius: 50%;
-    background-color: black;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    flex-direction: column;
+
+div h1 {
+    color: white;
 }
-#Portfolio .upper{
-    display: flex;
-    justify-content: center;
+
+a {
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: brown;
 }
-.box{
-    height:20rem;
-    width:20rem;
-    margin: 1rem;
-    padding:1rem;
-    background-color:pink;
-    border-radius: 0.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#Portfolio .lower{
-    display:flex;
-    justify-content: center;
-}
-.rectangle{
-    height:20rem;
-    width:20rem;
-    margin: 1rem;
-    padding:1rem;
-    background-color:pink;
-    display: flex;
-    justify-content: center;
-    border-radius: 0.8rem;
-    align-items: center;
-}
- .curve{
-    height:200px;
-    width:200px;
-    border-radius:50%;
-    background-color: brown;
-}
-#Portfolio .curve img{
-    height:200px;
-    width:200px;
-    border-radius:50%;
-}
-.rect{
-    height:200px;
-    width:200px;
-    border-radius:50%;
-    background-color: brown;
-}
-#Portfolio .rect img{
-    height:200px;
-    width:200px;
-    border-radius:50%;
-}
-#Portfolio{
+
+#hero {
     height: 100vh;
 }
-#Portfolio h1{
+
+img {
+    width: 100%;
+}
+
+#hero h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
-#About {
-    height:100vh;
+
+#hero {
+    position: relative;
+}
+#about {
+    height: 100vh;
     display: flex;
+    margin: 7rem 0;
+}
+#about .left,.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
-#About h1{
+
+#about .left img {
+    width: 50%;
+}
+#service {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+#service .upper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#service h1 {
     display: flex;
     justify-content: center;
 }
- #About .lower p{
-    width: 20rem;
-    height: 10rem;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+
+#service .card {
+    color: azure;
+    background-color: skyblue;
+    width: 50%;
+    border-radius: 0.8rem;
     margin: 1rem;
     padding: 1rem;
-} 
-#About .input{
-    height: 5rem;
-    display: flex;
-    justify-content: center;
 }
 
-#contact{
-    height: 100vh;
-}
-#contact .upper{
-    border-style: dotted;
-    border-radius: 0.8rem;
- }
-#contact .upper{
+.card img {
+    width: 20rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-#contact .upper input{
+
+#contact .lower input {
     display: flex;
     flex-direction: column;
     margin: 1rem;
 }
-#footer{
-    height:25vh;
+
+#contact .lower {
+    border-style: dotted;
+    border-radius: 0.8rem;
     display: flex;
-    justify-content: space-around;
-    background-color: chocolate;
-}
-#footer .row{
-    height: 10rem;
-    width: 10rem;
-}
-#footer .row1{
-    height: 10rem;
-    width: 10rem;
     justify-content: center;
     align-items: center;
 }
-#footer .row2{
-    height: 10rem;
-    width: 10rem;
-    justify-content:end;
-    align-items:end;
+
+#contact h1 {
+    display: flex;
+    justify-content: center;
 }
 
-/* mobile screen */
-@media screen and (max-width:426px) {
-    header nav{
+@media screen and (max-width:426px){
+    nav div {
         display: none !important;
-
     }
-    i{
+
+    i {
         display: flex !important;
     }
-    #Home{
-        height: 110%;
-        width: 110%;
+
+    #hero {
+        height: 100%;
+    }
+    #hero img{
+        height: 100%;
+        width:100%;
+    }
+
+    #hero h1 {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 1rem;
+        background-color:white;
+        color: rgba(92, 58, 58, 0.701);
+    }
+
+    #about {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #about .left,.right {
+        width: 100%;
+    }
+
+    #about .right p {
+        padding: 1rem;
+    }
+    #service {
         display: flex;
-        margin: 1rem;
+        height: 100%;
     }
-    header{
-         padding: 1rem;
-         margin: 1rem;
+     #service .upper {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    
-
-
-    
+    #service .card img {
+        width:50%;
+        display: flex;
+        justify-content: center;
+    }
 }
