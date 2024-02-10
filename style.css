@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    margin: 1rem;
+    padding:1rem;
+}
+header {
+    color: aqua;
+    background-color: blue;
+    width:100%;
+    height:5rem;
+    display: flex;
+    justify-content: space-between;
+}
+ #Home .circle{ 
+    height:100 vh;
+    width:100vw;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+ } 
+ #Home{
+    background-color: aqua;
+    height: 100vh;
+ }
+#Home .circle img{
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+#Portfolio .upper{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    height:20rem;
+    width:20rem;
+    margin: 1rem;
+    padding:1rem;
+    background-color:pink;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Portfolio .lower{
+    display:flex;
+    justify-content: center;
+}
+.rectangle{
+    height:20rem;
+    width:20rem;
+    margin: 1rem;
+    padding:1rem;
+    background-color:pink;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.8rem;
+    align-items: center;
+}
+ .curve{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    background-color: brown;
+}
+#Portfolio .curve img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+}
+.rect{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    background-color: brown;
+}
+#Portfolio .rect img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+}
+#Portfolio{
+    height: 100vh;
+}
+#Portfolio h1{
+    display: flex;
+    justify-content: center;
+}
+#About {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+#About h1{
+    display: flex;
+    justify-content: center;
+}
+ #About .lower p{
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+} 
+#About .input{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#contact{
+    height: 100vh;
+}
+#contact .upper{
+    border-style: dotted;
+    border-radius: 0.8rem;
+ }
+#contact .upper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact .upper input{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+#footer{
+    height:25vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: chocolate;
+}
+#footer .row{
+    height: 10rem;
+    width: 10rem;
+}
+#footer .row1{
+    height: 10rem;
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+#footer .row2{
+    height: 10rem;
+    width: 10rem;
+    justify-content:end;
+    align-items:end;
+}
+
+/* mobile screen */
+@media screen and (max-width:426px) {
+    header nav{
+        display: none !important;
+
+    }
+    i{
+        display: flex !important;
+    }
+    #Home{
+        height: 110%;
+        width: 110%;
+        display: flex;
+        margin: 1rem;
+    }
+    header{
+         padding: 1rem;
+         margin: 1rem;
+    }
+    
+
+
+    
+}
